@@ -1,0 +1,73 @@
+nsjdcksdjknnnnnnLinux Practice Questions
+----------------------------
+
+1. Set the hostanme of your machine to "mytestserver". This hostname should be persistent i.e., it should not change on reboot.
+
+2. Add 3 users- harry, tom, jerry. Add one addtional group called auditor. Make sure the user harry and jerry are a part of this auditior group. Also the user tom must have a non-interactive shell(/bin/nologin).
+
+
+3. Create a folder under /home named as admins. Its respective group needs to be admins (if group is not there, then create it first.)
+The group users can read and write while other users are not allowed to do anything. 
+
+4. Configure a task to run the below command everyday at 14:25.
+echo "Hello there! How are you doing?"
+
+5. Create a file /etc/text with the below text.
+"
+This is a new file with a text
+The text is written for testing purpose.
+The task is to search for keyword abcde &
+write it down in another file
+"
+Find the row that contain abcde from file /etc/text, and write it down in another file called /tmp/testfile   
+
+
+
+6. Create a user alex and the user id should be 1234, and the password should be alex1234.
+Also make sure if you are able to login with this user. (you might need to allow passwordLogin in sshd_config file)
+
+7. Configure a http server which can be accessed from the browser on port 8080. 
+You might need to open the port in SG if not already done.
+
+8. Attach a volume of size 5GB to your ec2 instance and mount it to the path /mnt/newvol. The filesystem must be ext4.
+Increase the size of the volume to 8GB from aws console and then make the increased space available in the server.
+
+ 
+9. Add a group called developers and provide it a GID=4321
+
+10. Change the date and time of your system to 10AM in IST.
+
+11. Create a user called john and set his password to expire in next 25days. Also set the account to get expire in 30 days from creation date.
+
+Theory Questions:
+-------------------------
+
+1. What is Linux, Is it legal to edit linux kernel?
+2. What is a swap space?
+3. How will you check the memory usage of the system? Provide all the known commands.
+4. What are the types of file permissions available in Linux and what command can you use to change the permissions?
+5. What are inode and process id?
+6. Name the most command commands that you use in your day to day task. Also explain their usage in your activities.
+7. What are the different modes in vi editor?
+8. Explain the redirection operator in Linux  (>, >>)
+9. What command will you use to archive a directory?
+10. Provide a syntax to copy a file from source to destination path.
+11. How can terminate a running process?
+12. Give a command to rename a file called "oldfile" to "newfile".
+13. What command will you use to see the mount points in a system.
+14. How to create a text file without opening it.
+15. How would you delete a directory which contains some files.
+16. You tried to delete a file but got the error. What could be the possible reason? Provide atleast two reasons.
+17. How to check the current set path variable?
+18. Explain the Linux system boot process.
+19. Which command will you use to see the running processes and the used ports.
+20. Explain the output of free command.
+21. How will you check the load and CPU performance?
+22. What are the differences between softlink and Hardlink and how will you create them?
+23. Provide the command to get date in 
+		DD-MM-YYYY format
+		only month
+		only the hour
+
+24. How will you force a user to change his password on the first login.
+
