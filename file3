@@ -1,0 +1,670 @@
+{
+	"metadata" : {
+		"deviceType" : "solar"
+	},
+	"labelMappings" : {
+		"solarStatus" : {
+			"0"  : "Wait",
+			"1"  : "Normal",
+			"2"  : "Fault",
+			"3"  : "Permanent Fault"
+			
+		}
+	},
+	
+	"data" : [
+		{
+			"funId" : 3,
+			"regStart" : 512,
+			"parameters" : [
+				{
+				    "regSize" : 16,
+				    "propName" : "Reserved11",
+				    "valSize" : 128,
+				    "valType" : "ASCII",
+				    "bitOffset" : 0,
+				    "byteOffset" : 0,
+				    "scalingFactor" : 1
+				}
+			
+			]	
+				
+		},
+		
+		{
+			"funId" : 3,
+			"regStart" : 768,
+			"parameters" : [
+				
+				{
+					"regSize" : 16,
+				    "propName" : "PV1-InputVoltage",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 0,
+				    "scalingFactor" : 0.1
+				},
+				{
+					"regSize" : 16,
+				    "propName" : "PV2-InputVoltage",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 2,
+				    "scalingFactor" : 0.1
+				},
+				{
+					"regSize" : 16,
+				    "propName" : "PV1-InputCurrent",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 4,
+				    "scalingFactor" : 0.1
+				},
+				{
+					"regSize" : 16,
+				    "propName" : "PV2-InputCurrent",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 6,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "Inverter voltage of phase R",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 8,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "Inverter voltage of phase Y",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 10,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "Inverter voltage of phase B",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 12,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "Inverter current of phase R",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 14,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "Inverter current of phase Y",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 16,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "Inverter current of phase B",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 18,
+				    "scalingFactor" : 0.1
+				},
+				{
+					"regSize" : 16,
+				    "propName" : "Inverter output frequency",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 20,
+				    "scalingFactor" : 0.01
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "Reserved1",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 28,
+				    "scalingFactor" : 1,
+				    "mapKey" : "solarStatus"
+				},
+				{
+					"regSize" : 16,
+				    "propName" : "Reserved2",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 30,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "Total Energy delivered by the unit",
+				    "valSize" : 32,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 36,
+				    "scalingFactor" : 0.1
+				},
+				{
+					"regSize" : 16,
+				    "propName" : "Reserved4",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 64,
+				    "scalingFactor" : 0.1
+				}
+				
+				
+			]	
+				
+		},
+		{
+			"funId" : 3,
+			"regStart" : 855,
+			"parameters" : [
+				{
+				    "regSize" : 16,
+				    "propName" : "PV3-InputVoltage",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 0,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "PV4-InputVoltage",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 2,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "PV3-InputCurrent",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 4,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "PV4-InputCurrent",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 6,
+				    "scalingFactor" : 0.1
+				},
+	            {
+				    "regSize" : 16,
+				     "propName" : "PV1_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 8,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+					"propName" : "PV2_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 10,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+					 "propName" : "PV3_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 12,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+	                "propName" : "PV4_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 14,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+			        "propName" : "PV5_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 16,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+					 "propName" : "PV6_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 18,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+					"propName" : "PV7_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 20,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+					"propName" : "PV8_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 22,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "PV9_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 24,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+					"propName" : "PV10_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 26,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+				    "propName" : "PV11_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 28,
+				    "scalingFactor" : 0.1
+				},
+				{
+				    "regSize" : 16,
+					 "propName" : "PV12_Current",
+				    "valSize" : 16,
+				    "valType" : "Integer",
+				    "bitOffset" : 0,
+				    "byteOffset" : 30,
+				    "scalingFactor" : 0.1
+				}
+				
+			]
+		}
+		
+		
+	],
+	
+	"default" : [
+		{
+			"propName" : "No of MPPT modules connected",
+		    "value" : 4
+		},
+	    {
+			"propName" : "Reserved20",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved19",
+		    "value" : 0
+		},
+	
+		{
+			"propName" : "No of PV String connected",
+		    "value" : 12
+		},
+		{
+			"propName" : "Reserved14",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved13",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved12",
+		    "value" : 0
+		},
+		
+		{
+			"propName" : "Reserved18",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved17",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved16",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved15",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved4",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved5",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved6",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved7",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved8",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved9",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved10",
+		    "value" : 0
+		},
+		{
+			"propName" : "Inverter Output apparent power",
+		    "value" : 0
+		},
+		{
+			"propName" : "Inverter Output active power",
+		    "value" : 0
+		},
+		{
+			"propName" : "Inverter Output reactive power",
+		    "value" : 0
+		},
+		{
+			"propName" : "Inverter output Power Factor",
+		    "value" : 0
+		},
+		{
+			"propName" : "Reserved3",
+		    "value" : 0
+		}
+		
+		
+		
+	],
+	"alarms" : [
+		{
+			"funId" : 3,
+			"regStart" : 768,
+			"parameters" : [
+				
+				{
+					"regSize" : 32,
+					"propName" : "GFCI Device Check Failure ",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 0,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "AC HCT Check Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 1,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				
+				{
+					"regSize" : 32,
+					"propName" : "DCI Consistency Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 3,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "GFCI Consistency Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 4,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				
+				{
+					"regSize" : 32,
+					"propName" : "GFCI Device Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 6,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Relay Device Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 7,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "AC HCT Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 0,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Utility Loss",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 1,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Gournd I Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 2,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "DC Bus High",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 3,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Internal Fan Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 4,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Over Temperature",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 5,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Auto Test Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 6,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "PV Over Voltage",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 7,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "External Fan Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 0,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Vac Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 17,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Isolation Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 2,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "DC Injection High",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 3,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+			
+				{
+					"regSize" : 32,
+					"propName" : "Fac Consistency Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 6,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Vac Consistency Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 7,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				
+				{
+					"regSize" : 32,
+					"propName" : "Relay Check Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 1,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				
+				{
+					"regSize" : 32,
+					"propName" : "Fac Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 5,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "EEPROM R/W Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 6,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				},
+				{
+					"regSize" : 32,
+					"propName" : "Internal Communication Failure",
+					"valSize" : 1,
+					"valType" : "Integer",
+					"bitOffset" : 7,
+					"byteOffset" : 32,
+					"scalingFactor" : 1
+				}
+				
+			
+				
+				
+			
+				
+			]
+		}			
+ ]
+}
